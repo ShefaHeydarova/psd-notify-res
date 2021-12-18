@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Raleway+Dots&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --open: "Open Sans", sans-serif;
+  --raleway: "Raleway", sans-serif;
+  --color: #2dcb71;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.central {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h4 {
+  font: 600 22px var(--raleway);
+  line-height: 18px;
+  color: #222222;
+}
+
+/*-------------------------HEADER-----------------------------*/
+header {
+  background-image: url("images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .center {
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 175px;
+}
+
+header .logo {
+  padding-top: 170px;
+  margin-bottom: 40px;
+}
+
+header p {
+  font: 500 24px var(--open);
+  line-height: 36px;
+  max-width: 469px;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+header .menu ul {
+  display: flex;
+  justify-content: start;
+  padding-inline-start: 0;
+}
+
+header .menu ul li {
+  list-style: none;
+  padding-right: 15px;
+}
+
+header .menu ul li a {
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #030303;
+  opacity: 0.5;
+  position: relative;
+}
+
+header .menu ul li a.active,
+header .menu ul li a:hover {
+  background-color: var(--color);
+  opacity: 1;
+}
+
+header .menu ul li i {
+  font-size: 1.5rem;
+}
+
+.center{
+  background-image: url('images/hand.png');
+  background-repeat: no-repeat;
+  background-position: right bottom ;
+
+}
+
+/*-------------------------FEATURES-----------------------------*/
+
+#features .feature {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.feature .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--color);
+  position: relative;
+  margin: auto;
+}
+
+.feature i {
+  font-size: 2.5rem;
+}
+
+.feature h4 {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.feature p {
+  max-width: 358px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #848484;
+  font-family: var(--open);
+  text-align: center;
+}
+
+/*-------------------------NOTIFIED-----------------------------*/
+
+#notified {
+  background-color: #e3e3e3;
+  padding: 55px 0;
+}
+
+#notified .notified {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notified p {
+  font: 16px var(--open);
+  max-width: 541px;
+  line-height: 26px;
+  color: #848484;
+  padding: 25px 0;
+}
+
+.notified form {
+  display: flex;
+}
+
+.notified input {
+  max-width: 288px;
+  padding: 18px 0 18px 22px;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: none;
+}
+
+.notified input::placeholder {
+  font-size: 18px;
+  line-height: 18px;
+  color: #848484;
+  font-family: var(--open);
+}
+
+.notified button {
+  font: bold 22px var(--raleway);
+  line-height: 18px;
+  color: #ffffff;
+  background-color: var(--color);
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 18px 35px;
+}
+
+#notified iframe {
+  max-width: 500px;
+  height: 306px;
+  border-radius: 10px;
+}
+
+/*-------------------------TESTIMONIALS-----------------------------*/
+
+#testimonials {
+  padding: 55px 0;
+}
+
+#testimonials p {
+  font: italic 18px var(--open);
+  max-width: 887px;
+  margin: auto;
+  line-height: 30px;
+  color: #848484;
+  text-align: center;
+}
+
+#testimonials h5 {
+  font: bold 18px var(--raleway);
+  font-size: 18px;
+  line-height: 20px;
+  color: #2e2e2e;
+  text-align: center;
+  padding: 25px 0;
+}
+
+#testimonials .side {
+  display: flex;
+  justify-content: space-between;
+}
+
+#testimonials img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+#testimonials h4 {
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 20px;
+}
+
+#testimonials .social-menu ul {
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0;
+  padding-top: 25px;
+}
+
+#testimonials .social-menu ul li {
+  list-style: none;
+  padding-left: 10px;
+}
+
+#testimonials .social-menu ul li a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #d4d4d4;
+  position: relative;
+}
+
+#testimonials .social-menu ul li a:hover {
+  background-color: var(--color);
+}
+
+/*-------------------------FOOTER-----------------------------*/
+
+footer {
+  background-color: #e3e3e3;
+  padding: 60px 0;
+}
+
+footer #justify-center {
+  max-width: 650px;
+  margin: auto;
+}
+
+footer #justify-center ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer #justify-center ul li {
+  list-style: none;
+}
+
+footer #justify-center ul li a {
+  font-size: 16px;
+  line-height: 26px;
+  color: #848484;
+  font-family: var(--open);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/*-----------------------------RESPONSIVE---------------------------*/
+
+@media only screen and (max-width: 768px) {
+  header .center {
+    margin-left: 50px;
+    padding-bottom: 20px;
+  }
+
+  header .logo {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  header p {
+    max-width: 300px;
+    font-size: 16px;
+  }
+
+  header .menu ul li a {
+    width: 32px;
+    height: 32px;
+  }
+
+  header .menu ul li i {
+    font-size: 1rem;
+  }
+
+  #features .feature {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature div {
+    padding-top: 20px;
+  }
+
+  #notified {
+    width: 100%;
+    margin: auto;
+  }
+
+  #notified .notified {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .notified h4 {
+    text-align: center;
+  }
+
+  .notified p {
+    text-align: center;
+  }
+
+  .notified form {
+    justify-content: center;
+  }
+
+  #notified iframe {
+    border-radius: 0;
+    padding-top: 40px;
+  }
+
+  #testimonials .side {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #testimonials img {
+    display: inline-block;
+    min-width: 75px;
+    min-height: 70px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .center{
+  background: none;
+  }
+
+  #notified iframe{
+    width: 100vw;
+  }
+
+  #justify-center ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+}
